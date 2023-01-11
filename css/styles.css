@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Variables de colores  */
+:root {
+  --azul: #2a41e8;
+  --varianteazul: #eaedfd;
+  --naranja: #ff5e14;
+  --negro: #000;
+  --banner: #292929;
+  --footer: #151515;
+  --blanco: #fff;
+  --gris: #9b9b9b;
+  --grisItemNavbar: #4b4d4f;
+  --grisItemInputs: #ececec;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var();
+}
+
+/* Comienzo con estilos de la navbar  */
+.Sec1_nav {
+  width: 100%;
+  height: 70px;
+  background-color: var(--azul);
+  color: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Sec1_nav article {
+  display: flex;
+  column-gap: 20px;
+  font-size: 13px;
+  padding-left: 40px;
+}
+
+.Sec1_nav article h3 {
+  font-weight: 400;
+}
+
+.Sec1_nav button {
+  height: inherit;
+  background-color: transparent;
+  border: none;
+  color: var(--blanco);
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.Sec1_nav button:hover {
+  background-color: var(--varianteazul);
+  color: var(--azul);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Comienzo los estilos para la seccion 2 de la navbar */
+
+.Sec2_nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.Sec2_nav figure {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 20px;
+}
+
+.Sec2_nav figure img {
+  width: 30px;
+  height: 30px;
+}
+
+.Sec2_nav figure h2 {
+  font-weight: 400;
+}
+
+.Sec2_nav figure h2 span {
+  font-weight: 500;
+  color: var(--grisItemNavbar);
+}
+
+.Sec2_nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  flex-grow: 3;
+}
+
+.Sec2_nav ul li {
+  font-size: 14px;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.Sec2_nav ul li:hover {
+  color: var(--azul);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Sec2_nav ul .active {
+  color: var(--azul);
+}
+
+.Sec2_nav button {
+  width: 9.7%;
+  background-color: var(--naranja);
+  border: none;
+  color: var(--blanco);
+}
+
+/* Comienzan los estilos para el header  */
+
+.radius {
+  border-radius: 5px;
+}
+
+header {
+  width: 100%;
+  height: 670px;
+  background-image: url(../img/hero-bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Comienzan los estilos para los textos del header  */
+.Sec_header_textos h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.Sec_header_textos p {
+  margin: 20px 0;
+}
+
+/* comienzan estilos para la seccion de los inputs  */
+
+.Sec_header_inputs {
+  width: 770px;
+  height: 80px;
+  background-color: var(--blanco);
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0 20px;
+}
+
+.Sec_header_inputs input {
+  flex-grow: 3;
+  background-color: var(--grisItemInputs);
+  border: none;
+  padding: 0 20px;
+}
+
+.heightInputs {
+  height: 40px;
+}
+
+.inputSelect {
+  background-color: var(--grisItemInputs);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.inputSelect label {
+  font-size: 10px;
+  color: var(--grisItemNavbar);
+  padding: 0 2px;
+}
+
+.inputSelect select {
+  background-color: transparent;
+  border: none;
+  padding: 0 2px;
+  font-size: 12px;
+}
+
+.btnFindProperties {
+  background-color: var(--azul);
+  border: none;
+  color: var(--blanco);
+  font-size: 12px;
+  padding: 0 10px;
+  transition: 0.5s;
+}
+
+.btnFindProperties:hover {
+  background-color: var(--varianteazul);
+  color: var(--azul);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* comienzan estilos para el main  */
+main {
+  width: 100%;
+}
+
+.Sec_properties_houses {
+  margin-top: 5%;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.Sec_properties_Cards {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Sec_properties_text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Sec_properties_text h4 {
+  text-transform: uppercase;
+  color: var(--gris);
+  font-weight: 400;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.Sec_properties_text h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.Sec_properties_text h2 span {
+  font-weight: 500;
+}
+
+/* Comienzan los estilos para las cards houses  */
+
+.Card {
+  width: 330px;
+}
+
+.img__card {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  color: var(--blanco);
+}
+
+.text_header_card {
+  display: flex;
+  column-gap: 10px;
+  font-size: 10px;
+}
+.text_header_card {
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.text_header_card .azul {
+  padding: 5px;
+  background-color: var(--azul);
+}
+.text_header_card .naranja {
+  padding: 5px;
+  background-color: var(--naranja);
+}
+
+.red {
+  padding: 5px;
+  background-color: red;
+}
+
+.p_bottomImg {
+  width: 40%;
+  text-align: center;
+  margin-top: 120px;
+  background-color: var(--blanco);
+  padding: 3px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--azul);
+}
+
+.Sec2_Card .p_figcaption {
+  font-size: 12px;
+  color: var(--gris);
+  margin-bottom: 20px;
+}
+.Sec2_Card .h3_figcaption {
+  font-size: 15px;
+  color: var(--negro);
+  font-weight: 400;
+}
+
+.Sec2_Card {
+  padding: 20px;
+}
+
+.infoArrendatario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.infoArrendatario p {
+  font-size: 12px;
+  color: var(--gris);
+}
+
+.footerCardSec1 {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.footerCardSec1 img {
+  width: 20px;
+}
+
+.footerCardSec1 p {
+  font-size: 12px;
+  color: #2a41e8;
+}
+.footerCardSec2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexIcons {
+  display: flex;
+  column-gap: 5px;
+}
+.flexIcons p {
+  font-size: 12px;
+}
+.flexIcons p span {
+  font-weight: 500;
+}
+
+/* comienza estilos para el banner */
+
+.banner{
+  display: flex;
+  margin-top: 5%;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.banner_text{
+  justify-content: center;
+  row-gap: 5px;
+  width: 620px;
+  background-color: var(--banner);
+}
+
+.banner_text p{
+  justify-content: center;
+  color: var(--grisItemNavbar);
+}
+
+.banner_logos{
+  gap: 5px;
+}
+
+/* comienza estilos properties */
+.img_properties{
+  width: 100%;
+  margin: 70px 70px;
+}
+
+.img_bottom{
+  display: flex;
+  gap: 15px;
+}
+
+.img_top{
+  display: flex;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+/* comienza estilos agentes */
+
+.agent_card{
+  display: flex;
+  margin-top: 5%;
+  width: 80%;
+  margin: 50px auto;
+  gap: 15px;
+  
+}
+
+.agent{
+  width: 400px;
+  height: 600px;
+  background-color: var(--blanco);
+  border-radius: 10px;
+}
+
+.agent_description{
+padding: 10PX 5px;
+row-gap: 15px;
+}
+.agent_description h2{
+  font-weight: 200;
+  color: var(--grisItemNavbar);
+}
+
+.agent_description h3{
+font-weight: 400;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 40px;
+}
+
+/* comienza estilos sell */
+
+.sell{
+  background-image: url(../img/hero-bg-image.jpg);
+  width: 100%;
+  height: 670px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sell_text{
+  background-color: var(--azul);
+  width: 700px;
+  height: 430px;
+  margin: 190px 520px 190px 80px;
+  
+}
+
+.sell_text h2{
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 50px;
+  margin: 40px 30px;
+}
+
+.sell_text h4{
+  color: var(--grisItemNavbar);
+  margin: 20px 30px;
+
+}
+
+.sell_text p{
+  color: var(--blanco);
+  background-color: var(--negro);
+  font-size: 15px;
+  border-radius: 8px;
+  margin: 20px 30px;
+  padding: 5px 5px;
+ 
+}

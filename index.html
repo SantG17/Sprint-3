@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Casa Royal</title>
+  </head>
+  <body>
+    <!-- comienza la navbar  -->
+    <nav>
+      <section class="Sec1_nav">
+        <article>
+          <h3>1441 Market St, San Francisco</h3>
+          <h3>(123) 456-7890</h3>
+          <h3>Mon - Sun: 8:00am - 6:00pm</h3>
+        </article>
+        <button>LOGIN/REGISTER</button>
+      </section>
+      <section class="Sec2_nav">
+        <figure>
+          <img src="img/logo.svg" alt="" />
+          <h2>Casa<span>Royal</span></h2>
+        </figure>
+        <ul>
+          <li class="active">HOMEPAGE</li>
+          <li>PROPERTIES</li>
+          <li>AGENCIES</li>
+          <li>PAGES</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+        <button>SUBMIT LISTING</button>
+      </section>
+    </nav>
+
+    <!-- termina la navbar  -->
+
+    <!-- Comienza header  -->
+
+    <header>
+      <section class="Sec_header_filtros">
+        <article class="Sec_header_textos">
+          <h1>Let Us Guide You Home</h1>
+          <p>Find the house of your dreams</p>
+        </article>
+        <article class="Sec_header_inputs radius">
+          <div class="inputSelect heightInputs radius">
+            <label for="">Type</label>
+            <select name="" id="selectType">
+              <option value="house">HOUSE</option>
+              <option value="apart">APARTMENT</option>
+            </select>
+          </div>
+          <div class="inputSelect heightInputs radius">
+            <label for="">Status</label>
+            <select name="" id="selectStatus">
+              <option value="1">FOR SALE</option>
+              <option value="2">SOLD</option>
+            </select>
+          </div>
+          <input
+            type="text"
+            placeholder="Searh for properties, suburbs or keywords…"
+            class="radius heightInputs"
+            id="textFilter"
+          />
+          <a href="#SecHouse">
+            <button
+              class="btnFindProperties radius heightInputs"
+              id="btnFindProperties"
+            >
+              FIND PROPERTIES
+            </button>
+          </a>
+        </article>
+      </section>
+    </header>
+
+    <!-- Termina header  -->
+
+    <!-- Comienza seccion principal -->
+
+    <main>
+      <!-- comienza la seccion Featured Properties -->
+      <section class="Sec_properties_houses">
+        <article class="Sec_properties_text">
+          <h4>casaroyal real estate agency</h4>
+          <h2><span>Featured</span> Properties</h2>
+        </article>
+        <article class="Sec_properties_Cards" id="SecHouse">
+          <!-- <figure class="Card radius" id="">
+            <article class="img__card">
+              <div class="text_header_card">
+                <p class="azul radius">HOUSE</p>
+                <p class="naranja radius">FOR SALE</p>
+              </div>
+              <p class="p_bottomImg radius">$3200000</p>
+            </article>
+            <figcaption class="Sec2_Card">
+              <p class="p_figcaption">Beverly Hills, CA</p>
+              <h3 class="h3_figcaption">
+                272 S Rexford Dr, Beverly Hills, CA 90212, USA
+              </h3>
+              <article>
+                <div class="infoArrendatario">
+                  <div class="footerCardSec1">
+                    <img src="img/User.png" alt="" />
+                    <p>Hellen Mattis</p>
+                  </div>
+                  <p>4 months ago</p>
+                </div>
+                <div class="footerCardSec2">
+                  <div class="flexIcons">
+                    <img src="img/AreaIcon.svg" alt="" />
+                    <p><span>2400</span>Sq Ft</p>
+                  </div>
+
+                  <div class="flexIcons">
+                    <div class="flexIcons">
+                      <img src="img/GarageIcon.svg" alt="" />
+                      <p>3</p>
+                    </div>
+                    <div class="flexIcons">
+                      <img src="img/BathroomIcon.svg" alt="" />
+                      <p>3</p>
+                    </div>
+                    <div class="flexIcons">
+                      <img src="img/BedroomIcon.svg" alt="" />
+                      <p>3</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </figcaption>
+          </figure> -->
+        </article>
+      </section>
+      <!-- termina la seccion Featured Properties -->
+    </main>
+
+    <!-- termina seccion principal  -->
+
+    <!-- comienza seccion del hot deal -->
+    <article class="Sec_properties_text">
+        <h4>casaroyal real estate agency</h4>
+        <h2><span>Hot</span> Deal</h2>
+    </article>
+    <section class="banner">
+        <div class="banner_img">
+          <img src="./img/imgbanner.jpg" alt="">
+        </div>
+        <div class="banner_text">
+          <p>Residential Towe For Rent</p>
+          <h2>15 Apartments of Type B</h2>
+          <p>Los Angeles, CA</p>
+          <p>From $1,700.00 Per Month</p>
+          <img src="./img/circle hot deal.svg" alt="">
+          <div class="banner_logos">
+            <img src="./img/areasize.svg" alt="">
+            <img src="./img/Beds.svg" alt="">
+            <img src="./img/Baths.svg" alt="">
+            <img src="./img/Garage.svg" alt="">
+          </div>
+        </div>
+      </section>
+    <!-- termina seccion -->
+<!-- inicia seccion properties -->
+
+    <article class="Sec_properties_text">
+      <h4>casaroyal real estate agency</h4>
+      <h2><span>Properties</span> By Area</h2>
+    </article>
+    <section class="img_properties">
+      <div class="img_bottom">
+        <div class="losAngeles">
+          <img src="./img/areaBlock1.jpg" alt="">
+        </div>
+        <div class="sanFrancis">
+          <img src="./img/areablock2.jpg" alt="">
+        </div>
+      </div>
+      <div class="img_top">
+        <div class="seattle">
+          <img src="./img/areablock3.jpg" alt="">
+        </div>
+        <div class="sanDiego">
+          <img src="./img/areablock4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+        <!-- termina seccion -->
+<!-- inicia seccion agents -->
+
+<article class="Sec_properties_text">
+  <h4>meet our team</h4>
+  <h2><span>Our</span> Agents</h2>
+</article>
+<section class="agent_card">
+  <div>
+   <figure class="agent">
+      <img src="./img/Agent1.jpg" alt="">
+      <figcaption class="agent_description">
+        <h2>Real Estate Broker</h2>
+        <h3>JOHN DOE</h3>
+        <h2>123 456 7890</h2>
+        <h2>agent@gmail.com</h2>
+      </figcaption>
+   </figure> 
+  </div>
+  <div>
+    <figure class="agent">
+      <img src="./img/Agent2.jpg" alt="">
+      <figcaption class="agent_description">
+        <h2>Real Estate Broker</h2>
+        <h3>JANE DOE</h3>
+        <h2>123 456 7890</h2>
+        <h2>agent@gmail.com</h2>
+      </figcaption>
+   </figure> 
+  </div>
+  <div>
+    <figure class="agent">
+      <img src="./img/Agent3.jpg" alt="">
+      <figcaption class="agent_description">
+        <h2>Real Estate Broker</h2>
+        <h3>JOHN DOE</h3>
+        <h2>123 456 7890</h2>
+        <h2>agent@gmail.com</h2>
+      </figcaption>
+   </figure> 
+  </div>
+</section>
+<div class="icons">
+  <img src="./img/Oval.svg" alt="">
+  <img src="./img/Rectangle.svg" alt="">
+  <img src="./img/Rectangle.svg" alt="">
+</div>
+        <!-- termina seccion -->
+<!-- inicia seccion sell -->
+
+ <section class="sell">
+  <div class="sell_text">
+    <h2>Want to sell your property?</h2>
+    <h4>Let us create a tailored strategic marketing plan and keep
+    track of the selling process.</h4>
+    <p>MORE DETAILS</p>
+  </div>
+ </section>
+
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
